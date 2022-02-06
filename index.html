@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Password Generator</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+   <script src="index.js" defer></script>
+</head>
+
+<body>
+   <h1 class="main-title">PASSWORD GENERATOR</h1>
+
+   <div class="container-input">
+      <span>Length: <span id="value"></span> characters</span>
+      <input type="range" min="5" max="25" value=15 class="slider" onchange="changeValue(this.value)" />
+
+      <div class="checkboxes">
+         <div class="checkbox">
+            <span>Include numbers</span>
+            <input type="checkbox" class="checkbox-input" id="numbers">
+         </div>
+         <div class="checkbox">
+            <span>Include uppercased characters</span>
+            <input type="checkbox" class="checkbox-input" id="uppercased">
+         </div>
+         <div class="checkbox">
+            <span>Include symbols</span>
+            <input type="checkbox" class="checkbox-input" id="symbols">
+         </div>
+      </div>
+
+      <button id="button" class="button-cta">Generate password</button>
+   </div>
+
+   <div id="container-password" onclick="copyPassword()" class="container-password hide">
+      <span class="title">Your password is:</span>
+      <span id="password" class="password"></span>
+      <span class="tooltip">Click to copy! 👆</span>
+   </div>
+</body>
+
+</html>
