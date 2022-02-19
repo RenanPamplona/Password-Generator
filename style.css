@@ -69,7 +69,7 @@ body{
 }
 
 .title{
-   font-size: 12px
+   font-size: 12px;
 }
 
 .password{
@@ -123,4 +123,24 @@ body{
 .checkbox-input{
    display: flex;
    width: min-content;
+}
+
+.password-strength{
+   font-weight: 600;
+   padding: 6px 8px;
+   max-width: 150px;
+   margin-bottom: 10px;
+   margin-top: 5px;
+}
+
+.weak{
+   background-color: rgba(12, 240, 0, 0.3);
+}
+
+.normal{
+   background-color: rgba(0, 153, 255, 0.3);
+}
+
+.strong{
+   background-color: rgba(255, 0, 0, 0.3);
 }

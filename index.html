@@ -10,7 +10,7 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-   <script src="index.js" defer></script>
+   <script src="src/index.js" defer></script>
 </head>
 
 <body>
@@ -41,6 +41,8 @@
    <div id="container-password" onclick="copyPassword()" class="container-password hide">
       <span class="title">Your password is:</span>
       <span id="password" class="password"></span>
+      <span class="title">Password Strength: </span>
+      <span class="password-strength" id="strength"></span>
       <span class="tooltip">Click to copy! 👆</span>
    </div>
 </body>
