@@ -16,12 +16,18 @@ body{
    flex-direction: column;
 }
 
+span{
+   font-family: 'Poppins', sans-serif;
+}
+
 .main-title{
    max-width: 600px;
    margin-bottom: 24px;
    text-align: center;
    font-size: 85px;
-   font-family: 'Bebas Neue', sans-serif ;
+   font-family: 'Poppins' sans-serif;
+   font-weight: 900;
+   line-height: 80px;
 }
 
 .container-input{
@@ -34,11 +40,13 @@ body{
 }
 
 .slider{
-   -webkit-appearance: none;
+   border-radius: 10px;
+   appearance: none;
    background-color: #bdbdbd;
-   height: 15px;
+   height: 17px;
    padding: 2px;
-   margin-top: 6px
+   margin-top: 6px;
+   cursor: pointer;
 }
 
 .button-cta{
@@ -52,6 +60,7 @@ body{
    border-color:white;
    border-width: 1px;
    transition: 0.2s;
+   cursor: pointer;
 }
 
 .button-cta:hover{
@@ -82,6 +91,7 @@ body{
    align-items: center;
    border: 1px solid #777777;
    transition: 0.5s;
+   cursor: pointer;
 }
 
 .password:hover{
@@ -129,8 +139,8 @@ body{
    font-weight: 600;
    padding: 6px 8px;
    max-width: 150px;
-   margin-bottom: 20px;
-   margin-top: 5px;
+   margin-bottom: 15px;
+   margin-top: 10px;
 }
 
 .weak{
@@ -147,4 +157,51 @@ body{
 
 #inclusion-text{
    font-size: 16px;
+}
+
+input[type="checkbox"]{
+   appearance: none;
+   -webkit-appearance: none;
+   background-color: #d5d5d5;
+   height: 20px;
+   width: 20px;
+   border-radius: 4px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+input[type="checkbox"]:after{
+   font-family: "Font Awesome 5 Free";
+   font-weight: 900;
+   content: "\f00c";
+   color: rgb(255, 255, 255);
+   display: none;
+}
+
+input[type="checkbox"]:hover{
+   background-color: #8d8d8d;
+}
+
+input[type="checkbox"]:checked{
+   background-color: #5bcd3e;
+}
+
+input[type="checkbox"]:checked:after{
+   display: block;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+   appearance: none;
+   display: block;
+   width: 13px;
+   height: 13px;
+   border-radius: 3px;
+   background-color: #000000;
+
+}
+
+input[type="range"]::-webkit-slider-thumb:hover{
+   background-color: #353535;
 }
