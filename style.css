@@ -6,7 +6,8 @@
 }
 
 body{
-   background-color: #18181B;
+   background: rgb(27,27,28);
+   background: radial-gradient(circle, rgba(27,27,28,1) 32%, rgba(0,0,0,1) 100%);   
    color: #FFF;
    width: 100%;
    height: 100vh;
